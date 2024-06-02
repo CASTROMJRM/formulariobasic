@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 1</title>
+</head>
+<body>
+    <h1>Formulario con controles básicos</h1>
+    <form action="" method="post">
+        <fieldset>
+            <legend><h3>Registrate</h3></legend>
+            <label for="">Ingrese su correo:</label>
+            <input type="text" name="" id="">
+            <br><br>
+
+            <label for="">Describete:</label>
+            <textarea name="" id="" rows="6" cols="50"></textarea>
+            <br><br>
+
+            <label for="">Contraseña:</label>
+            <input type="password" name="" id="">
+            
+        </fieldset>
+
+        <fieldset>
+            <legend><h3>Tus gustos</h3></legend>
+            <label for="">¿De qué pais eres?</label>
+            <input list="options-combo" id="" name="">
+            <datalist id="options-combo">
+                <option value="México">
+                <option value="Chiapas">
+                <option value="Argentina">
+            </datalist>
+  
+            <label for="">¿Cuál es tu mascota favorita?:</label>
+            <select name="options-list" id=""> 
+                <option value="option1">Perro</option>
+                <option value="option2">Gato</option>
+                <option value="option3">Conejo</option>
+            </select>
+            
+            <label for="multiple-options">¿Cuál es tu color favorito?</label>
+            <select name="" id="multiple-options" multiple size="4">
+                <option value="rojo">Rojo</option>
+                <option value="verde">Verde</option>
+                <option value="azul">Azul</option>
+                <option value="negro">Negro</option>
+            </select>
+            <br><br>
+
+            <label for="list-radio">¿Cuál es tu comida favorita?</label>
+            <input type="radio" name="" value="">Enchiladas
+            <input type="radio" name="" value="">Mole
+            <input type="radio" name="" value="">Quesadillas
+            <input type="radio" name="" value="">Caldo de pollo
+            <br><br>
+            <label for="">¿ Deporte favorito?</label>
+            <input type="checkbox" name="" value="">Fútbol
+            <input type="checkbox" name="" value="">Basquetbol
+            <input type="checkbox" name="" value="">Beisbol
+            <input type="checkbox" name="" value="">Boxeo
+
+        </fieldset>
+
+        <fieldset>
+            <legend><h3>Guardar información</h3></legend>
+            <input type="submit" value="Guardar">
+            <input type="reset" value="Eliminar">
+            <input type="button" value="Cancelar">
+        </fieldset>
+
+        <fieldset>
+            <legend><h3>Otros</h3></legend>
+            <label for="">Imagenes</label>
+            <input type="file" id="">
+            <label for="nombre">Usuario:</label>
+            <input type="text" name="nombre" id="nombre">
+            <input type="hidden" id="12345" name="Castro" value="12345">
+            <input type="submit" value="Enviar">
+        </fieldset>
+        
+    </form>
+    
+</body>
+</html>
